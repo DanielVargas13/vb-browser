@@ -1,0 +1,11 @@
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\bin\Debug\Web Browser.exe.config
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\bin\Debug\Web Browser.exe
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\bin\Debug\Web Browser.pdb
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\bin\Debug\Web Browser.xml
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.vbprojResolveAssemblyReference.cache
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web_Browser.Resources.resources
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.vbproj.GenerateResource.Cache
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.exe
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.xml
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.pdb
+c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web_Browser.Browser.resources
