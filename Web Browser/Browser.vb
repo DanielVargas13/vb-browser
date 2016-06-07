@@ -15,7 +15,12 @@
     End Sub
 
     Private Sub GoBt_Click(sender As Object, e As EventArgs) Handles GoBt.Click
-        WebBrowser.Navigate(SearchTb.Text)
+        If UrlCb.Checked = True Then
+            WebBrowser.Navigate(SearchTb.Text)
+        Else
+            WebBrowser.Navigate("http://www.google.co.uk/search?hl=en&q=" + SearchTb.Text)
+        End If
+
     End Sub
 
     Private Sub WebBrowser_Navigating(sender As Object, e As WebBrowserNavigatingEventArgs) Handles WebBrowser.Navigating
@@ -32,5 +37,13 @@
         Else
             WebBrowser.Stop()
         End If
+    End Sub
+
+    Private Sub SearchTb_TextChanged(sender As Object, e As EventArgs) Handles SearchTb.TextChanged
+
+    End Sub
+
+    Private Sub ReloadButton_Click(sender As Object, e As EventArgs) Handles ReloadBt.Click
+        WebBrowser.Refresh()
     End Sub
 End Class

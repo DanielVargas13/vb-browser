@@ -9,3 +9,13 @@ c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj
 c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.xml
 c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web Browser.pdb
 c:\users\mina9\documents\visual studio 2015\Projects\Web Browser\Web Browser\obj\Debug\Web_Browser.Browser.resources
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\bin\Debug\Web Browser.exe.config
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\bin\Debug\Web Browser.exe
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\bin\Debug\Web Browser.pdb
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\bin\Debug\Web Browser.xml
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web_Browser.Browser.resources
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web_Browser.Resources.resources
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web Browser.vbproj.GenerateResource.Cache
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web Browser.exe
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web Browser.xml
+C:\Users\mina9\Desktop\New folder (2)\Web-Browser\Web Browser\obj\Debug\Web Browser.pdb

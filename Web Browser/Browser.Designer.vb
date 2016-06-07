@@ -24,7 +24,8 @@ Partial Class Browser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Browser))
         Me.ControlPanel = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.UrlCb = New System.Windows.Forms.CheckBox()
+        Me.ReloadBt = New System.Windows.Forms.Button()
         Me.HomeBt = New System.Windows.Forms.Button()
         Me.SearchTb = New System.Windows.Forms.TextBox()
         Me.GoBt = New System.Windows.Forms.Button()
@@ -38,7 +39,8 @@ Partial Class Browser
         '
         'ControlPanel
         '
-        Me.ControlPanel.Controls.Add(Me.Button1)
+        Me.ControlPanel.Controls.Add(Me.UrlCb)
+        Me.ControlPanel.Controls.Add(Me.ReloadBt)
         Me.ControlPanel.Controls.Add(Me.HomeBt)
         Me.ControlPanel.Controls.Add(Me.SearchTb)
         Me.ControlPanel.Controls.Add(Me.GoBt)
@@ -47,68 +49,89 @@ Partial Class Browser
         Me.ControlPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.ControlPanel.Location = New System.Drawing.Point(0, 0)
         Me.ControlPanel.Name = "ControlPanel"
-        Me.ControlPanel.Size = New System.Drawing.Size(542, 33)
+        Me.ControlPanel.Size = New System.Drawing.Size(1044, 33)
         Me.ControlPanel.TabIndex = 0
         '
-        'Button1
+        'UrlCb
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(138, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(36, 33)
-        Me.Button1.TabIndex = 5
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.UrlCb.AutoSize = True
+        Me.UrlCb.BackColor = System.Drawing.Color.Transparent
+        Me.UrlCb.Location = New System.Drawing.Point(984, 9)
+        Me.UrlCb.Name = "UrlCb"
+        Me.UrlCb.Size = New System.Drawing.Size(85, 17)
+        Me.UrlCb.TabIndex = 2
+        Me.UrlCb.Text = "URL Search"
+        Me.UrlCb.UseVisualStyleBackColor = False
+        '
+        'ReloadBt
+        '
+        Me.ReloadBt.BackColor = System.Drawing.Color.White
+        Me.ReloadBt.BackgroundImage = CType(resources.GetObject("ReloadBt.BackgroundImage"), System.Drawing.Image)
+        Me.ReloadBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ReloadBt.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ReloadBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReloadBt.Location = New System.Drawing.Point(133, 4)
+        Me.ReloadBt.Name = "ReloadBt"
+        Me.ReloadBt.Size = New System.Drawing.Size(26, 26)
+        Me.ReloadBt.TabIndex = 5
+        Me.ReloadBt.UseVisualStyleBackColor = False
         '
         'HomeBt
         '
-        Me.HomeBt.BackColor = System.Drawing.Color.Transparent
+        Me.HomeBt.BackColor = System.Drawing.Color.White
         Me.HomeBt.BackgroundImage = CType(resources.GetObject("HomeBt.BackgroundImage"), System.Drawing.Image)
         Me.HomeBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.HomeBt.Location = New System.Drawing.Point(96, 0)
+        Me.HomeBt.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.HomeBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.HomeBt.Location = New System.Drawing.Point(88, 4)
         Me.HomeBt.Name = "HomeBt"
-        Me.HomeBt.Size = New System.Drawing.Size(36, 33)
+        Me.HomeBt.Size = New System.Drawing.Size(27, 26)
         Me.HomeBt.TabIndex = 4
         Me.HomeBt.UseVisualStyleBackColor = False
         '
         'SearchTb
         '
-        Me.SearchTb.Location = New System.Drawing.Point(180, 7)
+        Me.SearchTb.Location = New System.Drawing.Point(165, 7)
         Me.SearchTb.Name = "SearchTb"
-        Me.SearchTb.Size = New System.Drawing.Size(762, 20)
+        Me.SearchTb.Size = New System.Drawing.Size(777, 20)
         Me.SearchTb.TabIndex = 3
         '
         'GoBt
         '
-        Me.GoBt.BackColor = System.Drawing.Color.Transparent
+        Me.GoBt.BackColor = System.Drawing.Color.White
         Me.GoBt.BackgroundImage = CType(resources.GetObject("GoBt.BackgroundImage"), System.Drawing.Image)
         Me.GoBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.GoBt.Location = New System.Drawing.Point(948, 0)
+        Me.GoBt.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.GoBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GoBt.Location = New System.Drawing.Point(948, 3)
         Me.GoBt.Name = "GoBt"
-        Me.GoBt.Size = New System.Drawing.Size(36, 33)
+        Me.GoBt.Size = New System.Drawing.Size(30, 29)
         Me.GoBt.TabIndex = 2
         Me.GoBt.UseVisualStyleBackColor = False
         '
         'ForwordBt
         '
-        Me.ForwordBt.BackColor = System.Drawing.Color.Transparent
+        Me.ForwordBt.BackColor = System.Drawing.Color.White
         Me.ForwordBt.BackgroundImage = CType(resources.GetObject("ForwordBt.BackgroundImage"), System.Drawing.Image)
         Me.ForwordBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ForwordBt.Location = New System.Drawing.Point(54, 0)
+        Me.ForwordBt.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ForwordBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ForwordBt.Location = New System.Drawing.Point(45, 4)
         Me.ForwordBt.Name = "ForwordBt"
-        Me.ForwordBt.Size = New System.Drawing.Size(36, 33)
+        Me.ForwordBt.Size = New System.Drawing.Size(27, 26)
         Me.ForwordBt.TabIndex = 1
         Me.ForwordBt.UseVisualStyleBackColor = False
         '
         'BackBt
         '
-        Me.BackBt.BackColor = System.Drawing.Color.Transparent
+        Me.BackBt.BackColor = System.Drawing.Color.White
         Me.BackBt.BackgroundImage = CType(resources.GetObject("BackBt.BackgroundImage"), System.Drawing.Image)
         Me.BackBt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BackBt.Location = New System.Drawing.Point(12, 0)
+        Me.BackBt.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BackBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BackBt.Location = New System.Drawing.Point(12, 4)
         Me.BackBt.Name = "BackBt"
-        Me.BackBt.Size = New System.Drawing.Size(36, 33)
+        Me.BackBt.Size = New System.Drawing.Size(27, 26)
         Me.BackBt.TabIndex = 0
         Me.BackBt.UseVisualStyleBackColor = False
         '
@@ -118,7 +141,7 @@ Partial Class Browser
         Me.BrowserPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BrowserPanel.Location = New System.Drawing.Point(0, 33)
         Me.BrowserPanel.Name = "BrowserPanel"
-        Me.BrowserPanel.Size = New System.Drawing.Size(542, 290)
+        Me.BrowserPanel.Size = New System.Drawing.Size(1044, 290)
         Me.BrowserPanel.TabIndex = 1
         '
         'WebBrowser
@@ -127,16 +150,17 @@ Partial Class Browser
         Me.WebBrowser.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser.Name = "WebBrowser"
-        Me.WebBrowser.Size = New System.Drawing.Size(542, 290)
+        Me.WebBrowser.Size = New System.Drawing.Size(1044, 290)
         Me.WebBrowser.TabIndex = 0
         Me.WebBrowser.Url = New System.Uri("https://www.google.com/", System.UriKind.Absolute)
         '
         'Browser
         '
+        Me.AcceptButton = Me.GoBt
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(542, 323)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1044, 323)
         Me.Controls.Add(Me.BrowserPanel)
         Me.Controls.Add(Me.ControlPanel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -159,5 +183,6 @@ Partial Class Browser
     Friend WithEvents ForwordBt As Button
     Friend WithEvents BackBt As Button
     Friend WithEvents WebBrowser As WebBrowser
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ReloadBt As Button
+    Friend WithEvents UrlCb As CheckBox
 End Class
